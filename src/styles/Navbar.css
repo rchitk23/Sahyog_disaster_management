@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navLeft a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navLeft .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navLeft a:hover {
+    color: #007bff;
+  }
+  
+  .navRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navRight select {
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  .registerBtn {
+    padding: 5px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .registerBtn:hover {
+    background-color: #0056b3;
+  }
+  

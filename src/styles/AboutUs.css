@@ -1,0 +1,51 @@
+.aboutUsSection {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutContent {
+  margin-bottom: 20px;
+}
+
+.aboutImages {
+  overflow: hidden; /* Hide the overflow for smooth sliding */
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: calc(200px * 9); /* Adjust width to match total number of images */
+  animation: slide 30s linear infinite; /* Apply continuous animation */
+}
+
+.aboutImage {
+  width: 200px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframe animation for continuous sliding */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start at the original position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move halfway (since images are duplicated) */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slider {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
